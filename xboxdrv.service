@@ -1,0 +1,11 @@
+[Unit]
+Description=Xbox controller driver daemon
+
+[Service]
+User=root
+Type=simple
+PIDFile=/var/run/xboxdrv.pid
+ExecStart=/usr/bin/xboxdrv -D --pid-file /var/run/xboxdrv.pid --silent --mimic-xpad --next-controller --mimic-xpad --next-controller --mimic-xpad --next-controller --mimic-xpad --next-controller --mimic-xpad --next-controller --mimic-xpad --next-controller --mimic-xpad --next-controller --mimic-xpad
+
+[Install]
+WantedBy=multi-user.target
