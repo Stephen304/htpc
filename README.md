@@ -5,6 +5,19 @@ A collection of things that helped me set up my htpc.
 * Getting CEC to work
 `sudo usermod -aG dialout <user>`
 
+* Automount
+  * If you don't already have it, `sudo apt-get install make pkg-config`
+  * Install dependencies
+```
+sudo apt-get install git libudev-dev libmount-dev libglib2.0-dev
+```
+  * `git clone https://github.com/Stephen304/ldm.git`
+  * `cd ldm && git checkout feature-library-order`
+  * `make && sudo make install`
+  * Copy `ldm.conf` to `/etc/ldm.conf`
+  * `sudo systemctl enable ldm`
+  * Optionally `sudo systemctl start ldm`
+
 ## Steam
 * Installing Jamestown
 ```
