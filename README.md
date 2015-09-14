@@ -11,8 +11,8 @@ A collection of things that helped me set up my htpc.
 ```
 sudo apt-get install git libudev-dev libmount-dev libglib2.0-dev
 ```
-  * `git clone https://github.com/Stephen304/ldm.git`
-  * `cd ldm && git checkout feature-library-order`
+  * `git clone https://github.com/LemonBoy/ldm.git`
+  * `cd ldm`
   * `make && sudo make install`
   * Copy `ldm.conf` to `/etc/ldm.conf`
   * `sudo systemctl enable ldm`
