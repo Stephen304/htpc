@@ -8,15 +8,22 @@ A collection of things that helped me set up my htpc.
 * Automount
   * If you don't already have it, `sudo apt-get install make pkg-config`
   * Install dependencies
-```
-sudo apt-get install git libudev-dev libmount-dev libglib2.0-dev
-```
+  ```
+  sudo apt-get install git libudev-dev libmount-dev libglib2.0-dev
+  ```
   * `git clone https://github.com/LemonBoy/ldm.git`
   * `cd ldm`
   * `make && sudo make install`
   * Copy `ldm.conf` to `/etc/ldm.conf`
   * `sudo systemctl enable ldm`
   * Optionally `sudo systemctl start ldm`
+* Fixing sound
+  * Add `~/.pulse/client.conf`:
+  ```
+  autospawn=yes
+  ```
+* Displaying foreign characters
+  * Switch theme font to arial based
 
 ## Steam
 * Installing Jamestown
